@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+ 
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<STYLE>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+          background-color: white;
+    }
+    ul{
+        text-decoration: none;
+        list-style-type: none;
+        background-color: rgb(83, 78, 78);
+        justify-content: center;
+        text-align: center;
+        height:45px;
+        padding: 8px;
+        color:aliceblue;
+        width: 100%;
+
+    }
+    li{
+        float:left;
+        position:relative;
+        top:5px;
+        text-decoration: none;
+        justify-content: center;
+        text-align: center;
+        margin-left: 34px;
+
+    }
+    input{
+        z-index: 1;
+        position: relative;
+        bottom:10px;
+        padding:8px 25px;
+        border:1px hidden;
+        border-radius: 5px;
+
+
+    
+    }
+    .material-symbols-outlined{
+        z-index: 2;
+        position: relative;
+        right:24px;
+        color:black;
+
+    }
+    a{
+        text-decoration-line: none;
+        color:aliceblue;
+        display: inline-block;
+        height:45px;
+        padding: 8px;
+        position: relative;
+        bottom:10px;
+        margin: 1px;
+
+    }
+    .new,.first:hover{
+        background-color: black;
+        display: inline-block;
+        height:45px;
+        padding: 8px;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        bottom: 14px;
+        padding: 12px 8px;
+        margin: 1px;
+                
+
+    }
+    .banner{
+        width:100%;
+        height: 250px;
+        margin: 0;
+        margin-bottom: 0;
+    }
+    .new_table{
+        width: 100%;
+        margin-top:0;
+        
+        background-color: rgb(241, 209, 209);
+        align-items: centerS;
+        height: 180px;
+        
+    }
+    img{
+        height:110px;
+        width:110px;
+        border: 1px hidden;
+        border-radius: 6px;
+    }
+    .card{
+        height: 150px;
+        width: 110px;
+        background-color: rgb(181, 210, 235);
+        box-sizing: border-box;
+        box-shadow: 2px 2px 2px 2px black;
+        margin-left: 15px;
+        border:1px hidden;
+        border-radius: 6px;
+        
+
+        
+    }
+    .card:hover{
+        box-shadow: 4px 4px 4px 4px black ;
+    }
+    p{
+        text-align: center;
+        margin-top:3px;
+    }
+    .address{
+        background-color: rgb(32, 24, 24);
+        width:100%;
+        height:250px;
+        color:aliceblue;
+        font-size: large;
+        position: relative;
+        top:760px;
+    }
+    .add{
+        position: relative;
+        left:550px;
+        display:inline;
+        top:4px;
+    }
+    .asider{
+        width: 30%;
+        float:right;
+        height:630px;
+        border:2px solid black;
+        border-radius: 6px;
+        position: relative;
+        bottom:960px;
+        margin-right:30px;
+        overflow: scroll;
+    }
+    .image{
+            width:100%;
+            height:350px;
+            border:2px solid black;
+            border-radius: 6px; 
+                      
+    }
+    .asider p{
+        font-size: larger;
+    }
+    .temples{
+        width:65%;
+        border:3px solid black inset;
+        border-radius: 10px;
+        height:300px;
+
+    }
+    .sto{
+         height:200px;
+         width:200px;
+         
+
+    }
+    .spe{
+        align-content: center;
+        position: relative;
+        left:55px;
+        padding:5px;
+        margin:15px;
+        background-color: rgb(185, 30, 30);
+    }
+    .last{color:black}
+    .temple_div{
+        border:1px solid black ;
+        height: 300px;
+        border-radius: 8px;
+        margin:2px;
+        margin-top: 15px;
+        margin-right: 10px;
+        box-shadow: 1px 1px 1px 1px black  ,1px 1px 1px 1px black  ;   
+    }
+
+    .awnish{
+        height:450px;
+        width: 600px;
+        margin: 5px;
+    }
+    .article{
+        height:400px;
+        width:100%;
+        
+        margin:5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        border:2px solid black;
+        border-radius: 10px;
+
+    }
+    .img_box img{
+        height:390px;
+        width : 560px;
+        float:right;
+        position: relative;
+        top:2px;
+        /* top:40px;
+        right:40px; */
+    }
+    h3{
+        text-align: center;
+        font-size: 40px;
+        position: relative;
+        top:70px;
+
+
+    }
+    .nte{
+        position: relative;
+        top:80px;
+        text-align: cemter;
+        font-size: large;
+        font-style: bold;
+        width:800px;
+
+
+    }
+    .explore{
+        position: relative;
+        padding:15px;
+        font-size: 20px;
+        background-color:rgb(250, 174, 10);
+        border:5px solid rgb(250, 174, 10);
+        border-radius: 32px;
+        font-style: bold;
+        top:130px;
+        left:60px;
+
+
+    }
+    .explore:hover{
+        background:transparent;
+        transition: 1s;
+
+    }
+    .video{
+        height:800px;
+        width: 100%;
+        position:relative;
+        bottom:650px;
+    }
+    .videos{
+        position: relative;
+        bottom:1400px;
+    }
+    .nowa{
+        text-shadow:2px 2px 2px rgb(32, 24, 24);
+        position: relative;
+        left:200px;
+        color:aliceblue;
+    }
+    .towa{
+        position:relative;
+        width:500px;
+        color:aliceblue;
+        text-shadow: 2px 2px 2px rgb(32, 24, 24);
+        font-size: large;
+        font-style: bold;
+        left:600px;
+        top:100px;
+    }
+    .but{
+        padding:12px;
+        font-size: 17px;
+        background:transparent;
+        color: aliceblue;
+        border:5px solid rgb(250, 174, 10);
+        border-radius: 32px;
+        font-style: bold;
+        position: relative;
+        top:140px;
+        left:950px;
+    }
+    .but:hover{
+        background:transparent;
+        transition: 1s;
+
+    }
+
+
+
+
+
+</STYLE>
+<body>
+    <ul>
+        <li><a href="#" class="new">HOME</li></a>
+        <li><a href="login.html" class="first" target="_parent">LOGIN</li></a>
+    <li><a href="#" class="first">PRODUCTS</li></a>
+        <li><a href="#addi" class="first">HELP</li></a>
+        <li><a href="#" class="first">ORDERS</li></a>
+        <li><a href="#" class="first">LOCATION</li></a>
+        <li><a href="#" class="searchhover"><input type="search" class="search" placeholder="search for products"><span class="material-symbols-outlined">
+            search
+            </span></li></a>
+
+    </ul>
+    <img src="banner2.jpeg" class="banner">
+    <marquee height="250px" scrollamount="25" behavior="alternate"><img src="sale2.jpeg" class="awnish"></marquee>
+
+    <table class="new_table">
+        <tr>
+            <td><a href="file:///C:/Users/Prince/OneDrive/Desktop/pujamart.com/murti.html"><div class="card name"><img src="ganesh.jpeg"><p class="last"> MURTIS</p></div></a></td>
+            <td><a href="file:///C:/Users/Prince/OneDrive/Desktop/pujamart.com/things.html"><div class="card name"><img src="utensils.jpeg"><p class="last">UTENSILS</p></div></a></td>
+            <td><a href="file:///C:/Users/Prince/OneDrive/Desktop/pujamart.com/temple.html"><div class="card name"><img src="wood.jpeg"><p class="last">TEMPLES</p></div></a></td>
+            <td><div class="card name"><img src="flower.jpeg"><p class="last">FLOWERS</p></div></td>
+            <td><div class="card name"><img src="pujasaman.jpeg"><p class="last">PUJA SAMAN</p></div></td>
+            <td><div class="card name"><img src="cow.jpeg"><p class="last">DAIRY PRODUCTS</p></div></td>
+            <td><div class="card name"><img src="priest.jpeg"><p class="last">HIRE PRIEST</p></div></td>
+        </tr>
+    </table>
+    <article class="article">
+        <div class="img_box">
+            <img src="candle.jpeg" alt="">
+
+        </div>
+        <div class="article_content">
+  
+            <h3 class="title"><b>festivals are for celebrations.</h3></b>
+            <p class="nte">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Ea dolorum voluptas asperiores ut velit tempore, eaque
+                  sed vitae aliquid illo. Optio, aperiam cupiditate facere
+                   nostrum itaque modi ipsum fugiat. Tempore.
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                   . Delectus quis, totam architecto blanditiis magni voluptas
+                    eos repellat perspiciatis assumenda libero quidem sunt deleniti 
+                    earum vel rem eveniet dolore in ipsam?
+            </p>
+            <button class="explore" >Explore more</button>
+
+        </div>
+    </article>
+    <table class="tabular">
+        <tr class="temples">
+            <td><div class="temple_div"><img src="wood.jpeg" class="sto"><p>hand crafted wooden temple.<br>price:-1200</p><button class="spe">buy now</button></div></td>
+            <td><div class="temple_div"><img src="tem4.jpeg" class="sto"><p>hand crafted wooden temple.<br>price:-1200</p><button class="spe">buy now</button></div></td>
+            <td><div class="temple_div"><img src="tem5.jpeg" class="sto"><p>hand crafted wooden temple.<br>price:-1200</p><button class="spe">buy now</button></div></td>
+            <td><div class="temple_div"><img src="tem9.jpeg" class="sto"><p>hand crafted wooden temple.<br>price:-1200</p><button class="spe">buy now</button></div></td>
+            
+        </tr>
+        <tr class="temples">
+            <td><div class="temple_div"><img src="fifth.jpeg" class="sto"><p>hand crafted wooden temple.<br>price:-1200</p><button class="spe">buy now</button></div></td>
+            <td><div class="temple_div"><img src="first.jpeg" class="sto"><p>hand crafted wooden temple.<br>price:-1200</p><button class="spe">buy now</button></div></td>
+            <td><div class="temple_div"><img src="ganesh.jpeg" class="sto"><p>hand crafted wooden temple.<br>price:-1200</p><button class="spe">buy now</button></div></td>
+            <td><div class="temple_div"><img src="tem4.jpeg" class="sto"><p>hand crafted wooden temple.<br>price:-1200</p><button class="spe">buy now</button></div></td>
+            
+        </tr>
+        <tr class="temples">
+            <td><div class="temple_div"><img src="utensils.jpeg" class="sto"><p>hand crafted wooden temple.<br>price:-1200</p><button class="spe">buy now</button></div></td>
+            <td><div class="temple_div"><img src="the2.jpeg" class="sto"><p>hand crafted wooden temple.<br>price:-1200</p><button class="spe">buy now</button></div></td>
+            <td><div class="temple_div"><img src="the5.jpeg" class="sto"><p>hand crafted wooden temple.<br>price:-1200</p><button class="spe">buy now</button></div></td>
+            <td><div class="temple_div"><img src="the6.jpeg" class="sto"><p>hand crafted wooden temple.<br>price:-1200</p><button class="spe">buy now</button></div></td>
+            
+        </tr>
+                          
+    </table>
+    <aside class="asider">
+        <img src="rank.jpeg" class="image">
+        <p>we are at top in brand since 2010.</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Expedita temporibus minus voluptate officia, itaque repudiandae
+             quo at repellendus provident necessitatibus veniam ipsam, iste 
+             in quis dolores velit quisquam consectetur cum!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Excepturi at magni dicta sint molestiae dolor ut asperiores
+             vitae non. Rem quisquam, voluptatum corporis eveniet 
+             expedita eaque sed ex labore asperiores.
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Assumenda beatae odit ex iste neque eligendi?
+              Consequatur eveniet tenetur 
+            corporis maiores temporibus eius labore nobis
+             iusto possimus, accusantium doloribus doloremque architecto?
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Assumenda beatae odit ex iste neque eligendi?
+             Consequatur eveniet tenetur 
+           corporis maiores temporibus eius labore nobis
+            iusto possimus, accusantium doloribus doloremque architecto?
+       </p>        
+
+    </aside>
+
+    <address class="address" id="addi"></br>
+        <p>we are pujamart.com we sell things related to hindu worshiping.</p>
+        <p>for any queries contact us one:-</p>
+        <a href="#" class="add">pritamkumar2865@gmail.com</a>
+        <p>contact no. :-7033617904 </p>
+        <p>address :- Durga chowk , building no. :- 2 </br>near P&M Mall , pin:-800011 </br> dist:- patna , state:- Bihar </p>
+        
+    </address>
+    <video autoplay loop muted plays-inline class="video">
+        <source src="video.mp4">
+    </video>
+    <div class="videos">
+        <h3 class="nowa">why we celebrate festivals?</h3>
+        <p class="towa">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Ut est cupiditate asperiores pariatur, voluptatem aliquid
+              vitae et officia, dolores sunt enim. Modi quod nesciunt itaqu
+              e. Doloremque nobis sequi velit laborum?
+        </p>
+        <button class="but">Explore more</button>
+    </div>
+
+
+</body>
+</html>
